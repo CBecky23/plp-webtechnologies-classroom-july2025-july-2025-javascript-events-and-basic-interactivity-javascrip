@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JS Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>Join the Dev Community</h1>
+            <button id="theme-toggle" class="btn-toggle">Dark Mode</button>
+        </header>
+
+        <section class="form-section">
+            <h2>Create Account</h2>
+            <form id="signup-form" novalidate>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username">
+                    <small class="error-msg"></small>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="example@email.com">
+                    <small class="error-msg"></small>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password">
+                    <small class="error-msg"></small>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm Password">
+                    <small class="error-msg"></small>
+                </div>
+
+                <button type="submit" class="btn-submit">Sign Up</button>
+                <p id="success-message" class="hidden"> Account created successfully!</p>
+            </form>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <button class="faq-question">Why do I need to sign up?</button>
+                <div class="faq-answer">
+                    <p>Signing up allows you to access exclusive developer resources and tutorials.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Is this service free?</button>
+                <div class="faq-answer">
+                    <p>Yes! Our basic tier is completely free forever.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
